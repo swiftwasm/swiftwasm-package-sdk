@@ -16,7 +16,7 @@ then
 fi
 sysroot="$(dirname $0)/wasi-sdk/opt/wasi-sdk/share/sysroot"
 
-"$sdk/extra_utils/generateModulemap.sh" >"$sdk/opt/swiftwasm-sdk/lib/swift/wasm/wasm32/glibc.modulemap"
+"$sdk/extra_utils/generateModulemap.sh" "$sysroot" >"$sdk/opt/swiftwasm-sdk/lib/swift/wasm/wasm32/glibc.modulemap"
 
 "$sdk/opt/swiftwasm-sdk/bin/swiftc" -target wasm32-unknown-unknown-wasm \
 	-sdk "$sysroot" -O -c \

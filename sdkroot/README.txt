@@ -51,7 +51,14 @@ Running Wasm files
 To run the resulting hello.wasm file:
 
 - open js-polyfill/polyfill.html in your browser
-- select the hello.wasm file
+- select "Browse", and choose the hello.wasm file
+- you should get output in the textbox.
+
+Note: the polyfill included here works in Firefox 66 and Chrome 74.
+
+Safari requires a slightly different polyfill: please use the hosted polyfill at
+
+https://swiftwasm.org/polyfill/
 
 You can also run the file with
 
