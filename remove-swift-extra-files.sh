@@ -22,3 +22,5 @@ do
 	echo $basepath/$i
 	rm $basepath/$i
 done
+# Mac only
+rm -r $basepath/lib/swift/macosx $basepath/lib/sourcekitd.framework
