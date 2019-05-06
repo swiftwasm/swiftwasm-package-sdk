@@ -85,3 +85,5 @@ LLVM/Clang: https://github.com/llvm/llvm-project/blob/master/lld/LICENSE.TXT
 WASI sysroot: https://github.com/CraneStation/wasi-sysroot/blob/master/LICENSE
 
 ICU: https://github.com/unicode-org/icu/blob/master/icu4c/LICENSE
+
+WASI polyfill: https://github.com/CraneStation/wasmtime/blob/master/wasmtime-wasi/LICENSE
