@@ -7,8 +7,7 @@ then
 	exit 1
 fi
 sdk="$(dirname $0)"
-echo "$sdk"
-tmpobj="$(mktemp -t swiftwasm)"
+tmpobj="$(mktemp -t swiftwasm-XXXXXXXX)"
 outputfile="${@: -1}"
 if [[ "$outputfile" != *.wasm ]]
 then
@@ -17,7 +16,7 @@ then
 fi
 sysroot="$(dirname $0)/wasi-sdk/opt/wasi-sdk/share/sysroot"
 
-"$sdk/extra_utils/generateModuleMap.sh" >"$sdk/opt/swiftwasm-sdk/lib/swift/wasm/wasm32/glibc.modulemap"
+"$sdk/extra_utils/generateModulemap.sh" >"$sdk/opt/swiftwasm-sdk/lib/swift/wasm/wasm32/glibc.modulemap"
 
 "$sdk/opt/swiftwasm-sdk/bin/swiftc" -target wasm32-unknown-unknown-wasm \
 	-sdk "$sysroot" -O -c \
@@ -38,5 +37,6 @@ sysroot="$(dirname $0)/wasi-sdk/opt/wasi-sdk/share/sysroot"
 	"$sdk/extra_objs/fakepthread.o" \
 	"$sdk/extra_objs/fakelocaltime.o" \
 	"$sdk/extra_objs/swift_end.o" \
-	--no-gc-sections
+	--no-gc-sections \
+	--no-threads
 rm "$tmpobj"
