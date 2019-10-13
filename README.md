@@ -1,4 +1,4 @@
-Creates packages containing everything needed to build WebAssembly prpgrams with Swift.
+Creates packages containing everything needed to build WebAssembly programs with Swift.
 
 # Building
 
