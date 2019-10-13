@@ -7,7 +7,6 @@ Please visit our website at https://swiftwasm.org for the latest updates.
 
 
 Install dependencies
-
 ====================
 
 Before running SwiftWasm, you will need to install some dependencies.
@@ -30,7 +29,6 @@ Install Windows Subsystem for Linux, then follow the Ubuntu instructions.
 
 
 Compile SwiftWasm
-
 =================
 
 Run
@@ -45,7 +43,6 @@ To compile example/hello.swift to hello.wasm.
 
 
 Running Wasm files
-
 ==================
 
 To run the resulting hello.wasm file:
@@ -66,7 +63,6 @@ You can also run the file outside a browser with:
 
 
 Questions and support
-
 =====================
 
 If you have any questions, please open an issue on
@@ -76,7 +72,6 @@ https://github.com/swiftwasm/swift
 
 
 Third-party licenses
-
 ====================
 
 This package contains components with their own license requirements.
