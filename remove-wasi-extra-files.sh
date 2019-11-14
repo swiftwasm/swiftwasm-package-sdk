@@ -1,5 +1,5 @@
 #!/bin/sh
-basepath="compiler/wasi-sdk/opt/wasi-sdk"
+basepath="compiler/wasi-sdk"
 filestoremove="bin/clang*
 bin/llvm*
 bin/llc"

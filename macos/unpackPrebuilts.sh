@@ -21,9 +21,9 @@ cd ..
 mv "compiler/wasi-sdk-"* "compiler/wasi-sdk"
 mv compiler/wasi-sdk/share/wasi-sysroot compiler/wasi-sdk/share/sysroot
 bash ../remove-swift-extra-files.sh || true
-rm -r compiler/wasi-sdk/opt/wasi-sdk/bin
-mkdir compiler/wasi-sdk/opt/wasi-sdk/bin
-cp tmpdir/clang+llvm-*-x86_64-darwin-apple/bin/wasm-ld compiler/wasi-sdk/opt/wasi-sdk/bin
+rm -r compiler/wasi-sdk/bin
+mkdir compiler/wasi-sdk/bin
+cp tmpdir/clang+llvm-*-x86_64-darwin-apple/bin/wasm-ld compiler/wasi-sdk/bin
 cp -a tmpdir/opt/swiftwasm-sdk/lib/swift/wasm compiler/opt/swiftwasm-sdk/lib/swift/wasm
 cp -a tmpdir/opt/swiftwasm-sdk/lib/swift_static compiler/opt/swiftwasm-sdk/lib/swift_static
 # ok, finally copy over the shared files
