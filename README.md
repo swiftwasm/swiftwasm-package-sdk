@@ -3,8 +3,8 @@ Creates packages containing everything needed to build WebAssembly programs with
 # Building
 
 ```
-./downloadPrebuilts.sh
-./buildPackages.sh
+./download-prebuilts.sh
+./build-packages.sh
 ```
 
 # Contents of package
