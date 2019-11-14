@@ -14,6 +14,7 @@ do
 done
 cd ..
 mv "compiler/wasi-sdk-"* "compiler/wasi-sdk"
+mv compiler/wasi-sdk/share/wasi-sysroot compiler/wasi-sdk/share/sysroot
 bash ../remove-swift-extra-files.sh || true
 bash ../remove-wasi-extra-files.sh || true
 bash ../copy-shared-files.sh || true

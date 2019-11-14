@@ -19,6 +19,7 @@ tar xf ../../prebuilt/clang+llvm-*-x86_64-darwin-apple.tar.xz
 tar xf ../../prebuilt/swiftwasm.tar.gz
 cd ..
 mv "compiler/wasi-sdk-"* "compiler/wasi-sdk"
+mv compiler/wasi-sdk/share/wasi-sysroot compiler/wasi-sdk/share/sysroot
 bash ../remove-swift-extra-files.sh || true
 rm -r compiler/wasi-sdk/opt/wasi-sdk/bin
 mkdir compiler/wasi-sdk/opt/wasi-sdk/bin
