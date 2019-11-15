@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-rm -rf swiftwasm-sdk compiler || true
+rm -rf swiftwasm-sdk compiler
 mkdir swiftwasm-sdk
 ln -s swiftwasm-sdk compiler
 cd compiler

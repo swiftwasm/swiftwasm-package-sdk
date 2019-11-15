@@ -4,6 +4,7 @@ Creates packages containing everything needed to build WebAssembly programs with
 
 ```
 ./download-prebuilts.sh
+./download-installable-prebuilts.sh
 ./build-packages.sh
 ```
 
@@ -13,7 +14,7 @@ Creates packages containing everything needed to build WebAssembly programs with
 - WASI modified sysroot from [wasi-sdk](https://github.com/swiftwasm/wasi-sdk)
 - libicu from [icu4c-wasi](https://github.com/swiftwasm/icu4c-wasi)
 - linking helpers from [swiftwasm-wasi-stubs](https://github.com/swiftwasm/swiftwasm-wasi-stubs)
-- wasi-ld, either from wasi-sdk (on Linux) or upstream LLVM 8.0 (on Mac)
+- wasi-ld, either from wasi-sdk (on Linux) or upstream LLVM 9.0 (on Mac)
 - build script for compiling a Swift file to a .wasm
 - a Getting Started guide
 
