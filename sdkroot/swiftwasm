@@ -36,7 +36,6 @@ abssysroot="$(cd "$(dirname "$sysroot")" && pwd)/$(basename "$sysroot")"
 	-licuuc -licudata \
 	"$sdk/wasi-sdk/lib/clang/9.0.0/lib/wasi/libclang_rt.builtins-wasm32.a" \
 	"$sdk/extra_objs/fakepthread.o" \
-	"$sdk/extra_objs/fakelocaltime.o" \
 	"$sdk/extra_objs/swift_end.o" \
 	--no-gc-sections \
 	--no-threads
