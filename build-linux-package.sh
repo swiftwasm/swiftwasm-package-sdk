@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Unpacking Linux prebuilts"
+mkdir -p output
 cd linux
 ./unpack-prebuilts.sh
 echo "Compressing"

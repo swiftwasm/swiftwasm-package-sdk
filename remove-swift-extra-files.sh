@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 basepath="compiler/opt/swiftwasm-sdk"
 filestoremove="bin/sil-* 
 bin/lldb*

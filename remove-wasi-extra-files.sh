@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 basepath="compiler/wasi-sdk"
 filestoremove="bin/clang*
 bin/llvm*
